@@ -8,6 +8,11 @@
 #p{
   padding-top: 70px;
 }
+@media screen and (max-width: 567px) {
+  #slika{
+    width: 100%;
+  }
+}
 #slika{
   border:3px solid white;
 	border-radius:50%;
