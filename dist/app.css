@@ -15,7 +15,8 @@
 }
 #slika{
   border:3px solid white;
-	border-radius:50%;
+  border-radius:50%;
+  width: 90vh;
 }
 #v{
   margin-right: 0;
