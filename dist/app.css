@@ -8,14 +8,9 @@
 #p{
   padding-top: 70px;
 }
-@media screen and (max-width: 567px) {
-  #slika{
-    width: 100%;
-  }
-}
 #slika{
   border:3px solid white;
-  border-radius:50%;
+	border-radius:50%;
   width: 90vh;
 }
 #v{
@@ -23,6 +18,14 @@
   padding: 40px;
   text-align: center;
   font-size: 23px;
+}
+#r{
+  text-align: center;
+}
+@media screen and (max-width: 567px) {
+  #slika{
+    width: 100%;
+  }
 }
 #n{
   text-align: center;
