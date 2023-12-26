@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija</title>
+</head>
+<link rel="stylesheet" href="dist/app.css">
+<link rel="stylesheet" href="car.css">
+<body class="container-fluid bg-info pt-3">
+    <h1 id="n"><b>REZERVACIJA</b></h1>
+    <div class="container-fluid bg-info pt-3">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-text">Ime i prezime</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+              </div>
+              <div class="input-group" id="pr">
+                <span class="input-group-text">Broj telefona</span>
+                <input type="number" aria-label="Broj telefona" class="form-control">
+              </div>
+              <div class="input-group" id="pr">
+                <span class="input-group-text">Adresa</span>
+                <input type="text" aria-label="Adresa" class="form-control">
+              </div>
+              <div class="input-group" id="pr">
+                <span class="input-group-text">E-Mail Adresa</span>
+                <input type="text" aria-label="E-Mail Adresa" class="form-control">
+              </div>
+        </div>
+          <div class="col-md-6"><div id="p">
+            <h4><b>Dodaci</b><br></h4>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked disabled>
+                <label class="form-check-label" for="flexSwitchCheckDefault">GPS(Navigacija)</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">WI-FI mobilni ruter</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled">
+                <label class="form-check-label" for="flexSwitchCheckDisabled">Sediste za decu-Buster</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled">
+                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Lanci za sneg</label>
+              </div>
+        </div>
+      </div>
+      <div id="z"><a class="btn btn-primary" href="#">Rezerviši</a></div>
+
+
+        <script src="dist/app.js"></script>
+</body>
+</html>
