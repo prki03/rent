@@ -5,13 +5,20 @@
   background: no-repeat center center scroll;
   background-size: cover;
 }
-#p{
-  padding-top: 70px;
+#z{
+  text-align: center;
+  padding-top: 25px;
+}
+#b{
+  padding-top: 20px;
 }
 #slika{
-  border:3px solid white;
+  border:10px solid var(--bs-info);
 	border-radius:50%;
-  width: 90vh;
+  width: 70vh;
+}
+#pr{
+  padding-top: 10px;
 }
 #v{
   margin-right: 0;
@@ -23,8 +30,14 @@
   text-align: center;
 }
 @media screen and (max-width: 567px) {
+  #e{
+    padding-top: 25px;
+  }
   #slika{
     width: 100%;
+  }
+  .carousel{
+    display: none;
   }
 }
 #n{
