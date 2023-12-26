@@ -7,39 +7,52 @@
 </head>
 <link rel="stylesheet" href="dist/app.css">
 <link rel="stylesheet" href="car.css">
-<body class="container-fluid bg-warning pt-3">
+<body class="container-fluid bg-info pt-3">
     <h1 id="n"><b>REZERVACIJA</b></h1>
-    <div>
-        <div class="container-fluid bg-warning pt-3">
-            <div class="row">
-              <div class="col-md-6">
-                <b>Ime</b> <br>
-                <input name="ime" size="80" maxlength="99"><br>
-                <b>Prezime</b><br>
-                <input name="prezime" size="80" maxlength="99"><br>
-                <b>Broj telefona</b><br>
-                <input name="brojtelefona" size="80" maxlength="99"><br>
-                <b>Broj lične karte</b><br>
-                <input name="brojtelefona" size="80" maxlength="99"><br>
-                <div id="p">
-                    <b>Dodaci</b><br>
-                <input type=checkbox>GPS(Navigacija)<br> 
-		        <input type=checkbox>WI-FI mobilni ruter<br> 
-		        <input type=checkbox>Sediste ze decu<br> 
-		        <input type=checkbox>Buster<br> 
-                <input type=checkbox>Lanci za gume<br>
-                </div>
-                </div>
-                <div class="col-md-6">
-                    <b>Adresa</b><br>
-                    <input name="adresa" size="80" maxlength="99"><br>
-                </div>
-                <div class="card-footer pt-3"></div>
-
-
+    <div class="container-fluid bg-info pt-3">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-text">Ime i prezime</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+              </div>
+              <div class="input-group" id="pr">
+                <span class="input-group-text">Broj telefona</span>
+                <input type="number" aria-label="Broj telefona" class="form-control">
+              </div>
+              <div class="input-group" id="pr">
+                <span class="input-group-text">Adresa</span>
+                <input type="text" aria-label="Adresa" class="form-control">
+              </div>
+              <div class="input-group" id="pr">
+                <span class="input-group-text">E-Mail Adresa</span>
+                <input type="text" aria-label="E-Mail Adresa" class="form-control">
+              </div>
+        </div>
+          <div class="col-md-6"><div id="p">
+            <h4><b>Dodaci</b><br></h4>
+            <div class="form-check form-switch" id="s">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">GPS (Navigacija)</label>
+            </div>
+            <div class="form-check form-switch" id="s">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">WI-FI mobilni ruter</label>
+            </div>
+            <div class="form-check form-switch" id="s">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Sediste za decu-Buster</label>
+            </div>
+            <div class="form-check form-switch" id="s">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Lanci za sneg</label>
+            </div>
+        </div>
+      </div>
+      <div id="z"><a class="btn btn-primary" href="#">Rezerviši</a></div>
 
 
         <script src="dist/app.js"></script>
-    </div>
 </body>
 </html>
