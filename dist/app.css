@@ -50,6 +50,9 @@ body {
   #slika{
     width: 100%;
   }
+  .carousel{
+    display: none;
+  }
 }
 
 /*!
