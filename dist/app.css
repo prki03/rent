@@ -31,9 +31,20 @@
 #rez{
   padding-bottom: 20px;
 }
+.pr{
+  padding-left: 40px;
+}#size{
+  font-size: 25px;
+}
 #v{
   padding-top: 70px;
   text-align:left;
+}
+#s{
+  padding-top: 15px;
+}
+#f{
+  font-size: 20px;
 }
 body {
   background-color: #ff7400;
@@ -46,6 +57,9 @@ body {
 #n{
   text-align: center;
 }
+.p{
+  padding-left: 20px;
+}
 @media screen and (max-width:567px){
   #slika{
     width: 100%;
@@ -54,7 +68,6 @@ body {
     display: none;
   }
 }
-
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -86,7 +99,7 @@ body {
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #ff7400;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #ffc300;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -94,7 +107,7 @@ body {
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 255, 116, 0;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 255, 195, 0;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -102,7 +115,7 @@ body {
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-primary-text-emphasis: #662e00;
-  --bs-secondary-text-emphasis: #2b2f32;
+  --bs-secondary-text-emphasis: #664e00;
   --bs-success-text-emphasis: #0a3622;
   --bs-info-text-emphasis: #055160;
   --bs-warning-text-emphasis: #664d03;
@@ -110,7 +123,7 @@ body {
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #ffe3cc;
-  --bs-secondary-bg-subtle: #e2e3e5;
+  --bs-secondary-bg-subtle: #fff3cc;
   --bs-success-bg-subtle: #d1e7dd;
   --bs-info-bg-subtle: #cff4fc;
   --bs-warning-bg-subtle: #fff3cd;
@@ -118,7 +131,7 @@ body {
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #ffc799;
-  --bs-secondary-border-subtle: #c4c8cb;
+  --bs-secondary-border-subtle: #ffe799;
   --bs-success-border-subtle: #a3cfbb;
   --bs-info-border-subtle: #9eeaf9;
   --bs-warning-border-subtle: #ffe69c;
@@ -198,7 +211,7 @@ body {
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: #ffac66;
-  --bs-secondary-text-emphasis: #a7acb1;
+  --bs-secondary-text-emphasis: #ffdb66;
   --bs-success-text-emphasis: #75b798;
   --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #ffda6a;
@@ -206,7 +219,7 @@ body {
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: #331700;
-  --bs-secondary-bg-subtle: #161719;
+  --bs-secondary-bg-subtle: #332700;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
@@ -214,7 +227,7 @@ body {
   --bs-light-bg-subtle: #343a40;
   --bs-dark-bg-subtle: #1a1d20;
   --bs-primary-border-subtle: #994600;
-  --bs-secondary-border-subtle: #41464b;
+  --bs-secondary-border-subtle: #997500;
   --bs-success-border-subtle: #0f5132;
   --bs-info-border-subtle: #087990;
   --bs-warning-border-subtle: #997404;
@@ -2002,13 +2015,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #e2e3e5;
-  --bs-table-border-color: #b5b6b7;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #fff3cc;
+  --bs-table-border-color: #ccc2a3;
+  --bs-table-striped-bg: #f2e7c2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #e6dbb8;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #ece1bd;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3080,20 +3093,20 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
-  --bs-btn-hover-border-color: #565e64;
-  --bs-btn-focus-shadow-rgb: 130, 138, 145;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
+  --bs-btn-color: #000;
+  --bs-btn-bg: #ffc300;
+  --bs-btn-border-color: #ffc300;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ffcc26;
+  --bs-btn-hover-border-color: #ffc91a;
+  --bs-btn-focus-shadow-rgb: 217, 166, 0;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ffcf33;
+  --bs-btn-active-border-color: #ffc91a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #ffc300;
+  --bs-btn-disabled-border-color: #ffc300;
 }
 
 .btn-success {
@@ -3216,19 +3229,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #6c757d;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #6c757d;
-  --bs-btn-hover-border-color: #6c757d;
-  --bs-btn-focus-shadow-rgb: 108, 117, 125;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #6c757d;
-  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-color: #ffc300;
+  --bs-btn-border-color: #ffc300;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ffc300;
+  --bs-btn-hover-border-color: #ffc300;
+  --bs-btn-focus-shadow-rgb: 255, 195, 0;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ffc300;
+  --bs-btn-active-border-color: #ffc300;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-color: #ffc300;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-border-color: #ffc300;
   --bs-gradient: none;
 }
 
@@ -6868,7 +6881,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -6916,8 +6929,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(86, 94, 100, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(86, 94, 100, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 207, 51, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 207, 51, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
