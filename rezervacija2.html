@@ -7,7 +7,7 @@
 </head>
 <link rel="stylesheet" href="dist/app.css">
 <link rel="stylesheet" href="car.css">
-<body class="bg-warning">
+<body class="bg-secondary">
   <nav class="navbar navbar-expand-lg bg-primary p-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><img src="./slike/rent.png" width="40px" alt=""></a>
@@ -52,10 +52,19 @@
                   
                 </div>
   
-                
+                <!-- * * * * * * * * * * * * * *
+            // * * SB Forms Contact Form * *
+            // * * * * * * * * * * * * * * *
+  
+            // This form is pre-integrated with SB Forms.
+            // To make this form functional, sign up at
+            // https://startbootstrap.com/solution/contact-forms
+            // to get an API token!
+            -->
   
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
   
+                  <!-- Name Input -->
                   <div class="form-floating mb-3">
                     <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
                     <label for="name">Ime i prezime</label>
@@ -66,34 +75,68 @@
                     <label for="name">Unesite broj telefona</label>
                     <div class="invalid-feedback" data-sb-feedback="name:required">Potrebno je uneti Vaš broj telefona</div>
                   </div>
+                  <!-- Email Input -->
                   <div class="form-floating mb-3">
                     <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
                     <label for="emailAddress">Email Adresa</label>
                     <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Potrebno je upisati Vaš E-mail</div>
                     <div class="invalid-feedback" data-sb-feedback="emailAddress:email">E-mail adresa nije validna</div>
-                  </div>                 
-                  <div class="form-floating mb-3">
+                  </div>  
+                  <div>
+                    <select class="form-select" aria-label="Default select example" id="size">
+                      <option selected>NIšta</option>
+                      <option value="1">Sedišta za decu (3€/dan)</option>
+                      <option value="2">Busteri (besplatno)</option>
+                      <option value="3">Sedišta za decu i busteri (3€/dan)</option>
+                    </select>
+                  </div>
+                  <div id="s">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault" id="f">
+                        Wi-Fi (3€/dan)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked disabled>
+                      <label class="form-check-label" for="flexCheckChecked" id="f">
+                        Zimske gume (Samo u zimskom periodu)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+                      <label class="form-check-label" for="flexCheckDefault" id="f">
+                        Navigacija (U ovom vozilu imate fabričku navigaciju)
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3" id="s">
                     <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                    <label for="message">Message</label>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    <label for="message">Gde želite da putujete?</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">Potrebno je uneti gde želite da idete!</div>
                   </div>
   
+                  <!-- Submit success message -->
                   <div class="d-none" id="submitSuccessMessage">
                     <div class="text-center mb-3">
-                      <div class="fw-bolder">Form submission successful!</div>
+                      <div class="fw-bolder">Uspešno ste rezervisali Vaše vozilo!</div>
                     </div>
                   </div>
   
-             
+                  <!-- Submit error message -->
                   <div class="d-none" id="submitErrorMessage">
                     <div class="text-center text-danger mb-3">Error sending message!</div>
                   </div>
   
+                  <!-- Submit button -->
                   <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Rezervišite</button>
+                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Rezervišite</button>
+                  </div>
+                  <div class="d-grid" id="pad">
+                    <a class="btn btn-primary btn-lg" href="./VIP.html">Nazad na prethodnu stranicu</a>
                   </div>
                 </form>
-               
+                <!-- End of contact form -->
   
               </div>
             </div>
@@ -104,7 +147,7 @@
     </div>
   </div>
   
-  
+  <!-- CDN Link to SB Forms Scripts -->
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
         <script src="dist/app.js"></script>
