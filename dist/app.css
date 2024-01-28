@@ -5,15 +5,18 @@
   background: no-repeat center center scroll;
   background-size: cover;
 }
-#kartica{
-  align-items: center;
-}
 .naslovv{
   text-align: center;
   font-size: 45pt;
 }
 #pad{
   padding-top: 15px;
+}
+#kartica{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
 }
 .naslov {
   text-align: center;
@@ -49,10 +52,18 @@
 #f{
   font-size: 20px;
 }
-body {
+#pa{
+  padding-top: 10px;
+}
+.body {
   background-color: #ff7400;
   margin: 0;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 25px;
+}
+.form-floating label:active{
+  display: none;
 }
 #z{
   text-align: center;
@@ -63,12 +74,35 @@ body {
 .p{
   padding-left: 20px;
 }
-@media screen and (max-width:567px){
+#kartica{
+  align-items: center;
+}
+
+@media screen and (max-width:1255px){
+  #slika{
+    width: 90%;
+  }
+}
+@media screen and (max-width:800px){
   #slika{
     width: 100%;
+    padding-top: 25px;
   }
   .carousel{
     display: none;
+  }
+}
+@media screen and (max-width:1123px){
+  #slika{
+    width: 90%;
+    padding-top: 10px;
+    align-items: center;
+  }
+  .carousel{
+    display: none;
+  }
+  #pa{
+    font-size: 15px;
   }
 }
 /*!
