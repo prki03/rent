@@ -39,28 +39,112 @@
       </div>
     </div>
   </nav>
-  <div class="naslovv">Uslovi najma</div>
-  <div class="p"><h2>Opste informacije o iznajmljivanju</h2>
-    <p class="pr">- Klijent mora imati važeću vozačku dozvolu.</p>
-    <h3>Starosna granica</h3>
-    <p class="pr">- Klijent mora da ima navršenih 21. godinu i da ima minimum 2 godina iskustva (probne vozačke ne važe)</p>
-    <h3>Način plaćanja</h3>
-    <p class="pr">- Gotovinom ili karticom</p>
-    <h4>Sipanje goriva/Punjenje baterije</h4>
-    <p class="pr">- Sva vozila se isporucuju sa punim rezervoarom goriva/punom baterijom i rezervorar/bateriju je potrebno da dopunite pre povratka u Rent a Car KiM agenciju. Inače cće se primeniti naplata troška.</p>
-    <h4>Depozit</h4>
-    <p class="pr">- Depozit je obavezan prilikom preuzimanja i zavisi od izbora vozila, minimalni je 150€, a tačnu informaciju o visini možete videti prilikom rezervacije. Depozit se može ostaviti u kešu ili rezervacijom sredstava na platnoj kartici. Stalnim klijentima se depozit smanjuje. Depozit možete platiti u bilo kojoj valuti srazmerno kursu Evra.</p>
-    <h4>Osiguranje</h4>
-    <p class="pr">- U cenu najma je uračunato kasko osiguranje sa učešćem u šteti do visine depozita, što znači da u slučaju saobraćajne nezgode ili kradje automobila Vaše učešće iznosi depozit koji ste ostavili prilikom preuzimanja automobila, a koji se krece od 150€ pa naviše. Automobil možete iznajmiti i sa Ful osiguranjem za koje visina doplate zavisi od klase automobila, uz priložen policijski zapisnik koji je obavezan, u slučaju nezgode nemate nikakvog učešća u šteti, niti uz vraćena dokumenta i ključa vozila nemate učešća u slučaju istog.</p>
-    <h4>Opšti uslovi osiguranja</h4>
-    <p class="pr">- Policijski zapisnik je obavezan za sve vrste osiguranja. U slučaju da vozač ne obezbedi prisustvo policije ili policijski zapisnik, pun iznos štete i/ili kradje biće na teret vozača, bez obzira na vrstu kupljenog osiguranja</p>
-    <h4>Napuštanje Srbije</h4>
-    <p class="pr">- Sa našim automobilom je mougće uz našu saglasnost i plaćanje takse od 25€. Ukoliko želite da putujete van granica naše države to nam ranije naglasite jer ćemo Vam u suprotno staviti pečat na ovlašćenje za vozilo u kojem Vam se ta opcija zabranjuje. (<b>NAPOMENA:</b> Saglasnost za Srbiju kroz administrativnu liniju je besplatan!!)</p>
-    <h4>Iznajmljivanje u jednom pravcu</h4>
-    <p class="pr">- U Srbiji iznajmljivanje u jednom pravcu se naplaćuje do 20€. <br> - U inostranstvu: <br> - Hrvatska: 300€ <br>- Crna Gora: 250€ <br>- BiH: 300€ <br>- Austrija: 600€ <br>- Slovenija: 400€ <br>- Makedonija: 250€ <br>- Madjarska: 285€ <br>- Nemačka: 1100€ <br>- Holandija: 300€ <br>- Češka: 850€ </p>
- 
-    
-    <script src="dist/app.js"></script>
+  <!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading -->
+  <h1 class="my-4">Uslovi najma
+    <h3>Opšte informacije o iznajmljivanju</h3>
+  </h1>
+
+  <div class="row">
+      <div class="col-lg-6 mb-4">
+          <div class="card h-100">
+              <img class="card-img-top" src="./slike/dozvola.jpg" width="100%" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">
+                      <h3>Starosna granica</h3>
+                  </h4>
+                  <p class="card-text" id="pa">Klijent mora imati navršenih 23. godinu i da ima minimum dve godine iskustva (Probne vozačke ne važe!)</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+          <div class="card h-100">
+              <img class="card-img-top" src="./slike/novac.jpg" width="100%" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">
+                    <h3>Način plaćanja</h3>
+                  </h4>
+                  <p class="card-text" id="pa">
+                    Gotovinom (plaćanje u dinarima ili evrima) ili karticom (primamo sve kartice)
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+          <div class="card h-100">
+              <img class="card-img-top" src="./slike/depozitt.jpg" width="100%" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">
+                    <h3>Depozit</h3>
+                  </h4>
+                  <p class="card-text" id="pa">Depozit je obavezan prilikom preuzimanja vozila i zavisi od izbora samog vozila, minimalni depozit je 150€. Depozit se može ostaviti kešom ili karticom. depozit možete plaiti u dinarima ili evrima.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+          <div class="card h-100">
+              <img class="card-img-top" src="./slike/osiguranje.jpg" width="100%" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">
+                    <h3>Osiguranje</h3>
+                  </h4>
+                  <p class="card-text" id="pa">U cenu najma je uračunato kasko osiguranje sa učešćem u šteti do visine depozita, što znači da u slučaju saobraćajne nezgode ili kradje automobila Vaše učešće iznosi depozit koji ste ostavili prilikom preuzimanja automobila. Automobil možete iznajmiti sa Ful osiguranjem za koje visina doplate zavisi od klase automobil uz priložen policijski zapisnik koji je obavezan, u slučaju nezgode nemate nikakvog učešća u šteti, niti uz vraćena dokumenta i ključa vozila nemate učešća u slučaju istog.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+          <div class="card h-100">
+              <img class="card-img-top" src="./slike/os.jpg" width="100%" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">
+                      <h3>Opšti uslovi osiguranja</h3>
+                  </h4>
+                  <p class="card-text" id="pa">Policijski zapisnik je obavezan za sve vrste osiguranja. U slučaju da vozač ne obezbedi prisustvo policije ili policijski zapisnik, pun iznos štete i/ili kradje biće na teret vozača, bez obzira na vrtu kupljenog osiguranja</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+          <div class="card h-100">
+              <img class="card-img-top" src="./slike/trip-jpg.jpg" width="100%" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">
+                    <h3>Napuštanje Srbije</h3>
+                  </h4>
+                  <p class="card-text" id="pa">Sa našim automobilom je moguće uz našu saglasnost i plaćanje takse do 25€. Ukoliko želite da putujete van granica naše države to nam ranije naglasite jer ćemo Vam u spurotno staviti pečat na ovlašćenje za vozilo u kojem Vam se ta opcija zabranjuje (Saglasnost za Srbiju kroz administrativnu liniju je besplatan!!)</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h4 class="card-title">
+                  <h3>Iznajmljivanje u jednom pravcu</h3>
+                </h4>
+                <p class="card-text">U Srbiji iznajmljivanje u jednom pravcu se naplaćuje 20€. <br> U inostranstvu: <br> Hrvatska: 300€ <br> Crna Gora: 250€ <br> BiH: 300€ <br> Austrija: 600€ <br> Slovenija: 400€ <br> Makedonija: 250€ <br> Madjarska: 285€ <br> Nemačka: 1100€ <br> Holandija: 300€ <br> Češka: 850€</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">
+                      <h3>Iznajmljivanje u oba smera</h3>
+                    </h4>
+                    <p class="card-text">U Srbiji iznajmljivanje u oba smera se naplaćuje 35€. <br> U inostranstvu: <br> Hrvatska: 480€ <br> Crna Gora: 380€ <br> BiH: 480€ <br> Austrija: 800€ <br> Slovenija: 600€ <br> Makedonija: 380€ <br> Madjarska: 400€ <br> Nemačka: 2000€ <br> Holandija: 480€ <br> Češka: 1150€</p>
+                </div>
+            </div>
+           </div> 
+    </div>
   </div>
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 text-black">
+    <div class="container text-center">
+      <small>Copyright &copy; Rent a Car KiM</small>
+    </div>
+  </footer>
+  <div class="card-footer pt-3"></div>
+</div>
+  <script src="dist/app.js"></script>
 </body>
 </html>
