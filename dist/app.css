@@ -5,6 +5,9 @@
   background: no-repeat center center scroll;
   background-size: cover;
 }
+#kartica{
+  align-items: center;
+}
 .naslovv{
   text-align: center;
   font-size: 45pt;
